@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2sl-uG-Zua">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="RootViewController" customModule="Homework4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3Je-qt-7G9">
+                        <barButtonItem key="leftBarButtonItem" title="Изменить" id="HRN-9t-nnf">
+                            <connections>
+                                <segue destination="v86-Gd-u8e" kind="presentation" id="9YO-7x-shr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1511.2" y="102.09895052473765"/>
+        </scene>
+        <!--Themes-->
+        <scene sceneID="912-6N-hLE">
+            <objects>
+                <viewController id="7fk-Zg-8gy" userLabel="Themes" customClass="ThemesViewController" customModule="Homework4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jL5-Um-51O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zm7-Mk-ru7">
+                                <rect key="frame" x="40" y="265.5" width="295" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wvk-bt-Xyk">
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="60"/>
+                                        <color key="backgroundColor" red="0.99485713239999995" green="0.94836179409999999" blue="0.55693876350000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Тема 1">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeButton:" destination="7fk-Zg-8gy" eventType="touchUpInside" id="D8i-ma-Dby"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIx-mv-jZB">
+                                        <rect key="frame" x="0.0" y="70" width="295" height="60"/>
+                                        <color key="backgroundColor" red="0.99485713239999995" green="0.94836179409999999" blue="0.55693876350000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Тема 2">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeButton:" destination="7fk-Zg-8gy" eventType="touchUpInside" id="RvW-1P-5yv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lN-hV-UOy">
+                                        <rect key="frame" x="0.0" y="140" width="295" height="60"/>
+                                        <color key="backgroundColor" red="0.99485713239999995" green="0.94836179409999999" blue="0.55693876350000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Тема 3">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeButton:" destination="7fk-Zg-8gy" eventType="touchUpInside" id="E1p-1t-xaQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zm7-Mk-ru7" firstAttribute="leading" secondItem="dim-Yz-w3S" secondAttribute="leading" constant="40" id="GG0-9Z-3O0"/>
+                            <constraint firstItem="zm7-Mk-ru7" firstAttribute="height" secondItem="jL5-Um-51O" secondAttribute="height" multiplier="0.3" id="PaB-V9-MxW"/>
+                            <constraint firstItem="dim-Yz-w3S" firstAttribute="trailing" secondItem="zm7-Mk-ru7" secondAttribute="trailing" constant="40" id="XjW-r4-yHg"/>
+                            <constraint firstItem="zm7-Mk-ru7" firstAttribute="centerY" secondItem="dim-Yz-w3S" secondAttribute="centerY" id="uin-Gy-1Cn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dim-Yz-w3S"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aIB-Fh-02Q">
+                        <barButtonItem key="rightBarButtonItem" title="Сохранить" id="rkx-a2-UJS">
+                            <connections>
+                                <action selector="saveButton:" destination="7fk-Zg-8gy" id="4SU-On-cMe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9KL-Fu-5QR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3258" y="102"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uCV-NJ-q7d">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2sl-uG-Zua" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mn4-rX-pXr">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="OiK-jg-FnR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yu9-tA-djL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766" y="102"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Egt-XD-RHO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="v86-Gd-u8e" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lwd-5c-uwr">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7fk-Zg-8gy" kind="relationship" relationship="rootViewController" id="0wf-7k-LUd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YXc-xH-Abo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2294" y="102"/>
+        </scene>
+    </scenes>
+</document>
